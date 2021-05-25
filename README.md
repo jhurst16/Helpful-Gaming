@@ -2,30 +2,33 @@
 a helpful gaming app
 
 
-## contributor
+## contributors
 
-This is a portfolio made by Jeremy Hurst.
+This is a helpful gaming website made by:
+Jeremy Hurst
+Charity Rogers
+Eric Knight
+LaMonica Arnold
 
 ## Languages
-
-
 
 ```
 HTML
 CSS
+JavaScript
 ```
 
 ## Usage
 
-Click the links to travel through the webpage, click the photos to travel to the projects.
+
 
 ## Links
 
-https://jhurst16.github.io/Portfolio/
+https://jhurst16.github.io/Helpful-Gaming/
 
-https://github.com/jhurst16/Portfolio
+https://github.com/jhurst16/Helpful-Gaming
 
 ## Screenshot
 
-![SS of website](https://user-images.githubusercontent.com/79426564/116156442-7bbbd500-a6b9-11eb-8be5-9deabaa7fc15.png)
+
 
