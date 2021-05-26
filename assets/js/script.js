@@ -8,3 +8,15 @@ document.getElementById("body").onscroll = function scrollingBackgound() {
     target.style.backgroundPosition = xvalue + " " + yvalue + "px";
   }
 //scrolling background end
+
+// event handler for search button
+$(document).ready(function() {
+  $("button").click(function() {
+    $(this).gameSearch();
+  });
+});
+
+// function performed when search button is clicked
+var gameSearch = function() {
+  
+}
