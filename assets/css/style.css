@@ -7,11 +7,11 @@ header {
 
 header div h1 {
   /* font-family: 'Londrina Outline', cursive; */
-  font-family: 'Press Start 2P', cursive;
-  font-size: 60px;
-  position: relative;
   /* font-weight: bold; */
-  background: url("../photos/mariobg2.png") 30% 20%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 65px;
+  position: relative;
+  background: url("../photos/mariobg2.png") 5% 5%;
   letter-spacing: 15px;
   background-size: cover;
   -webkit-text-fill-color: transparent;
