@@ -1,3 +1,7 @@
+header h1 {
+  font-family: 'Londrina Outline', cursive;
+}
+
 #background {
     background-image: url("../photos/marioBg.jpg");
     background-position: top center;
