@@ -1,3 +1,6 @@
+var youTubeLi = document.getElementById("shadow");
+var searchButton = document.getElementById("search-button");
+
 //this is for the scrolling background
 document.getElementById("body").onscroll = function scrollingBackgound() {  
     var scrolltotop = document.scrollingElement.scrollTop;
@@ -17,6 +20,4 @@ $(document).ready(function() {
 });
 
 // function performed when search button is clicked
-var gameSearch = function() {
-  
-}
+$("#searchButton")
