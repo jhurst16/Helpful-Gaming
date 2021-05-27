@@ -1,5 +1,31 @@
-header h1 {
+header div h1 {
   font-family: 'Londrina Outline', cursive;
+  font-size: 200px;
+  position: relative;
+  font-weight: bold;
+}
+
+header h1.first {
+  margin: 80px;
+  /*position: relative;
+  transform: translate(-50%, -50%); */
+  background: url("../photos/mariobg2.png") 50% 50%;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: SUPER;
+}
+
+header h1.second {
+  margin: 100px;
+ /* height: 0px; */
+  background: url("../photos/mariobg2.png") 50% 50%;
+  background-size: cover;
+}
+
+header h1.third {
+  margin: 150px;
+  background: url("../photos/mariobg2.png") 50% 50%;
+  background-size: cover;
 }
 
 #background {
