@@ -13,7 +13,7 @@ header h1 {
 #place-holder{
     height:20vh
 }
-#shadow {
+.shadow {
   box-shadow: 2px 2px 1px grey;
   border-radius: 10px;
 }
