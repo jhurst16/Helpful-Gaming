@@ -1,5 +1,9 @@
+header h1 {
+  font-family: 'Londrina Outline', cursive;
+}
+
 #background {
-    background-image: url("../photos/main-bg.jpeg");
+    background-image: url("../photos/mariobg2.png");
     background-position: top center;
     background-attachment:scroll;
     background-size: cover;
@@ -9,7 +13,7 @@
 #place-holder{
     height:20vh
 }
-#shadow {
+.shadow {
   box-shadow: 2px 2px 1px grey;
   border-radius: 10px;
 }
