@@ -1,5 +1,8 @@
-header h1 {
+.outline {
   font-family: 'Londrina Outline', cursive;
+  margin:0px;
+  padding:0px;
+  font-size: 4.0rem;
 }
 
 #background {
@@ -16,4 +19,10 @@ header h1 {
 .shadow {
   box-shadow: 2px 2px 1px grey;
   border-radius: 10px;
+}
+.flex {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

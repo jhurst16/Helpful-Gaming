@@ -1,14 +1,21 @@
-var youTubeDiv = document.getElementById("you-tube");
-var searchButton = document.getElementById("search-button");
-var inputEl = document.getElementById("input");
+var youTubeContainer = $("#videos");
+var searchButton = $("#search-button");
+var inputEl = $("#input");
 var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDSLlhNJxicn6aZwfjtRXoKPBvHT599JFc&type=video&part=snippet&maxResults=6&videoEmbeddable=true&q=+super mario`;
 
+var displayVideo = function(object){
+  console.log(object)
+  //represents one node
+  var video = $('<div>')
+  video.html(`<iframe width="300" height="200" src="https://www.youtube.com/embed/${object.id.videoId}" title="${object.snippet.title}" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
+  youTubeContainer.append(video)
+}
 
 // function performed when search button is clicked
-$(searchButton).on("click", function(event) {
+  searchButton.on("click", function(event) {
   event.preventDefault();
-  youTubeDiv.innerHTML = "";
-  var inputValue = inputEl.value;
+  //youTubeContainer.html('')
+  var inputValue = inputEl.val()
   queryUrl = youTubeUrl + inputValue;
 
 // fetch data from youtube api
@@ -17,11 +24,9 @@ $(searchButton).on("click", function(event) {
     return response.json();
 })
 .then(function(response) {
-  var videoId = response.items[0].id.videoId;
-  var videoTitle = response.items[0].snippet.title;
-
-  youTubeDiv.innerHTML = `<iframe width="400" height="300" src="https://www.youtube.com/embed/${videoId}" title="${videoTitle}" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-
+  $.each(response.items, function(index, item){
+    displayVideo(item)
+  })
   });
 });
 
