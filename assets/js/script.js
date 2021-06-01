@@ -6,7 +6,11 @@ var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDSLlhNJ
 var wikiUrl = `https://www.mariowiki.com/api.php?action=query&list=search&format=json&srsearch=+super%20mario`
 
 // function to display youTube videos
+<<<<<<< HEAD
 var displayVideo = function (object) {
+=======
+var displayVideo = function(object){
+>>>>>>> 9893254154cf3630aa4e60336bb793a72c0db57f
   console.log(object)
   //represents one node
   var video = $('<div>')
@@ -58,6 +62,33 @@ searchButton.on("click", function (event) {
         displayWiki(item)
       })
     });
+});
+
+// function to display wiki websites
+var displayWiki = function(object){
+  console.log(object)
+  //represents one node
+  var wiki = $('<div>')
+  wiki.html(json.query.search[0].title);
+  wikiContainer.append(wiki);
+
+}
+searchButton.on("click", function(event) {
+  event.preventDefault();
+  wikiContainer.html('')
+  var inputValue = inputEl.val()
+  queryUrl = wikiUrl + inputValue;
+
+// fetch data from youtube api
+  fetch(queryUrl)
+  .then(function(response) {
+    return response.json();
+})
+.then(function(response) {
+  $.each(response.items, function(index, item){
+    displayWiki(item)
+  })
+  });
 });
 
 //this is for the scrolling background
