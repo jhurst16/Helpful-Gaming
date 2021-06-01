@@ -6,11 +6,7 @@ var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDSLlhNJ
 var wikiUrl = `https://www.mariowiki.com/api.php?action=query&list=search&format=json&srsearch=+super%20mario`
 
 // function to display youTube videos
-<<<<<<< HEAD
 var displayVideo = function (object) {
-=======
-var displayVideo = function(object){
->>>>>>> 9893254154cf3630aa4e60336bb793a72c0db57f
   console.log(object)
   //represents one node
   var video = $('<div>')
