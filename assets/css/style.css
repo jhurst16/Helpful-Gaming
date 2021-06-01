@@ -1,37 +1,8 @@
-header {
-  background: url("https://ian-albert.com/games/super_mario_bros_maps/mario-8-4.gif");
-  background-size: cover;
-  width: 100%;
-  position: relative;
-}
-
-header div h1 {
-  /* font-family: 'Londrina Outline', cursive; */
-  /* font-weight: bold; */
-  font-family: 'Press Start 2P', cursive;
-  font-size: 65px;
-  position: relative;
-  background: url("../photos/mariobg2.png") 5% 5%;
-  letter-spacing: 15px;
-  background-size: cover;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  padding: 0px;
-}
-
-header h1.first {
-  margin-left: 50px;
-  padding-top: 70px;
-}
-
-header h1.second {
-  text-align: center;
-  padding-left: 35px;
-}
-
-header h1.third {
-  text-align: right;
-  padding-bottom: 40px;
+.outline {
+  font-family: 'Londrina Outline', cursive;
+  margin:0px;
+  padding:0px;
+  font-size: 4.0rem;
 }
 
 #background {
@@ -48,4 +19,10 @@ header h1.third {
 .shadow {
   box-shadow: 2px 2px 1px grey;
   border-radius: 10px;
+}
+.flex {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

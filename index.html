@@ -8,11 +8,7 @@
     <meta name="description" content="A helpful place for gamers!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Header Font choice # 1 will only put the image on the outline of the letters-->
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
-    <!-- Header Font choice # 1 includes lines 14 and 15 and matches the font used with in the game -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation-float.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
@@ -20,34 +16,24 @@
 </head>
 
 <body id="body">
-    <header>
-        <div>
-            <h1 class="first">SUPER</h1>
-            <h1 class="second">MARIO</h1>
-            <h1 class="third">BROS.</h1>
-        </div>
-        
-        <!-- Change the cursor <i class="fas fa-gamepad" style="font-size:48px;color:red"></i>; -->
-        <!--  -->
-    </header>
+    
     <!--this is for the navbar, keep on top  -->
-    <div class="top-bar">
+    <div class="top-bar flex">
         <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
                 <li class="menu-text">Helpful Gamers!</li>
-                <li class="shadow"><a href="https://mario.nintendo.com/">Official Site</a></li>
-                <li class="shadow"><a href="https://mario.fandom.com/wiki/MarioWiki">Mario Wiki</a></li>
-                <!-- Add modal to provide links to YouTube videos when the YouTube button is pressed-->
-                <!-- NintendoCentral to watch full walkthroughs of many games https://www.youtube.com/c/NintendoCentral/featured -->
-                <!-- Interview with Shigeru Miyamoto & Takashi Tezuka https://www.youtube.com/watch?v=DLoRd6_a1CI -->
-                <!-- Bio of Koji Kondo https://www.youtube.com/watch?v=WbADp8j6XiA -->
+                <li class="shadow"><a href="#">Official Site</a></li>
+                <li class="shadow"><a href="#">Mario Wiki</a></li>
                 <li class="shadow"><a href="#">YouTube</a></li>
             </ul>
         </div>
+        
+        <h1 class="outline">SUPER MARIO BROS.</h1>
+        
         <div class="top-bar-right">
             <ul class="menu">
-                <li><input type="search" placeholder="Search Games"></li>
-                <li><button type="button" class="button shadow">Search</button></li>
+                <li><input type="search" placeholder="Search Games" id="input"></li>
+                <li><button type="button" class="button shadow" id="search-button"><a href="#videos"></a>Search</button></li>
             </ul>
         </div>
     </div>
@@ -65,8 +51,16 @@
     <div class="container">
         <div class="row center-align">
             <div class="col s12">This div is 12-columns wide on all screen sizes</div>
-            <div class="col s6">Tips/Tricks!</div>
-            <div class="col s6">YouTube videos!</div>
+            <div class="col s6" id="wiki">
+
+
+
+            </div>
+            <div class="col s6" id="videos">
+
+
+
+            </div>
           </div>
     </div>
     
@@ -79,6 +73,7 @@
     <footer>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
