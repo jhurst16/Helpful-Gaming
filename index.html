@@ -11,65 +11,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation-float.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js">
 </head>
 
 <body id="body">
-    
+
     <!--this is for the navbar, keep on top  -->
-    <div class="top-bar flex">
-        <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">Helpful Gamers!</li>
-                <li class="shadow"><a href="#">Official Site</a></li>
-                <li class="shadow"><a href="#">Mario Wiki</a></li>
-                <li class="shadow"><a href="#">YouTube</a></li>
-            </ul>
+    <div class="flex header-color">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="header-text header-text">Helpful Gamers!</li>
+            <li class="shadow tertiary-color"><a href="https://mario.nintendo.com/" style="color:#145dac;">Official
+                    Mario!</a></li>
+            <li class="shadow tertiary-color"><a href="https://www.lego.com/en-us/themes/super-mario/about"
+                    style="color:#145dac;">LEGO Mario!</a></li>
+        </ul>
+        <div class="flex-row">
+            <h1 class="mario-color1">S</h1>
+            <h1 class="mario-color2">U</h1>
+            <h1 class="mario-color3">P</h1>
+            <h1 class="mario-color4">E</h1>
+            <h1 class="mario-color2">R</h1>
+            <h1 class="mario-color3">M</h1>
+            <h1 class="mario-color4">A</h1>
+            <h1 class="mario-color2">R</h1>
+            <h1 class="mario-color1">I</h1>
+            <h1 class="mario-color4">O</h1>
         </div>
-        
-        <h1 class="outline">SUPER MARIO BROS.</h1>
-        
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li><input type="search" placeholder="Search Games" id="input"></li>
-                <li><button type="button" class="button shadow" id="search-button"><a href="#videos"></a>Search</button></li>
-            </ul>
+        <div class="flex">
+            <input type="search" placeholder="Search Games" id="input">
+            <button type="button" class="button shadow" id="search-button"><a href="#videos"></a>Search</button>
         </div>
     </div>
     <!-- navbar end. -->
+
     <!-- this is the background,leave it under the navbar. -->
     <main>
         <div id="background">
         </div>
-        <p class="center-align"> Below is a grid of games and tips/videos to choose from!</p>
+    </main>
+    <div class="flex-row secondary-color">
+        <p class="text-size"> Below is a grid of videos and tips/videos to choose from!</p>
         <div id="place-holder">
         </div>
-    </main>
+    </div>
+
     <!-- background end -->
     <!-- container for one api -->
-    <div class="container">
-        <div class="row center-align">
-            <div class="col s12">This div is 12-columns wide on all screen sizes</div>
-            <div class="col s6" id="wiki">
-
-
-
+    <div class="flex-row">
+        <div>
+            <div class="flex-column" id="wiki">
             </div>
-            <div class="col s6" id="videos">
-
-
-
+            <div class="flex-column" id="videos">
             </div>
-          </div>
+        </div>
     </div>
-    
-
-
-
-
-
-    
     <footer>
 
     </footer>
