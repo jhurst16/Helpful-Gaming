@@ -1,8 +1,11 @@
 var youTubeContainer = $("#videos");
+var wikiContainer = $("#wiki");
 var searchButton = $("#search-button");
 var inputEl = $("#input");
 var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDSLlhNJxicn6aZwfjtRXoKPBvHT599JFc&type=video&part=snippet&maxResults=6&videoEmbeddable=true&q=+super mario`;
+var wikiUrl = `https://www.mariowiki.com/api.php?action=query&list=search&format=json&srsearch=+super%20mario`
 
+// function to display youTube videos
 var displayVideo = function(object){
   console.log(object)
   //represents one node
@@ -14,7 +17,7 @@ var displayVideo = function(object){
 // function performed when search button is clicked
   searchButton.on("click", function(event) {
   event.preventDefault();
-  //youTubeContainer.html('')
+  youTubeContainer.html('')
   var inputValue = inputEl.val()
   queryUrl = youTubeUrl + inputValue;
 
@@ -26,6 +29,33 @@ var displayVideo = function(object){
 .then(function(response) {
   $.each(response.items, function(index, item){
     displayVideo(item)
+  })
+  });
+});
+
+// function to display wiki websites
+var displayWiki = function(object){
+  console.log(object)
+  //represents one node
+  var wiki = $('<div>')
+  wiki.html(json.query.search[0].title);
+  wikiContainer.append(wiki);
+
+}
+searchButton.on("click", function(event) {
+  event.preventDefault();
+  wikiContainer.html('')
+  var inputValue = inputEl.val()
+  queryUrl = wikiUrl + inputValue;
+
+// fetch data from youtube api
+  fetch(queryUrl)
+  .then(function(response) {
+    return response.json();
+})
+.then(function(response) {
+  $.each(response.items, function(index, item){
+    displayWiki(item)
   })
   });
 });
