@@ -26,3 +26,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.menu-text {
+  font-family: 'Righteous', cursive;
+}
+
+footer h6 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+}
