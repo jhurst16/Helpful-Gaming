@@ -21,7 +21,7 @@
 /* Header Begins */
 
 .header-text {
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 0.1em;
   color: white;
   font-family: 'Righteous', cursive;
@@ -34,26 +34,26 @@
   padding: 0; 
 }
 
-h3 {
+/*h3 {
   margin: 0;
-}
+} */
 
 .header-color {
   background: #145dac;
 }
 
-/* Header Ends*/
+/* Header Ends */
 
 #background {
   background-image: url('../photos/mariobg2.png');
   background-position: top center;
   background-attachment: scroll;
   background-size: cover;
-  height: 50vh;
+  height: 47vh;
   width: 100%;
 }
 
-/* Search Begin */
+/* Search Begin, border-radius for search and input box had to be overritten within html, button shadow works in css*/
 
 #place-holder {
   height: 20vh;
@@ -62,7 +62,7 @@ h3 {
   box-shadow: 2px 2px 1px black;
   border-radius: 10px;
 
-  /* Search End */
+/* Search End, button shadow  */
 }
 .flex {
   display: flex;
@@ -85,20 +85,24 @@ h3 {
 
 /* Offical and Lego Button Begin */
 
+.tertiary-color {
+  background-color: #fbd10b;
+}
+
+/* Offical and Lego Button End */
+
+/* Grid Section Begins */
+
 .secondary-color {
   background: #145dac;
   color: rgb(255, 255, 255);
-}
-
-.tertiary-color {
-  background-color: #fbd10b;
 }
 
 .text-size {
   font-size: 25px;
 }
 
-/* Offical and Lego Button End */
+/* Grid Section Ends */
 
 /* Super Mario letters Begin */
 
@@ -145,13 +149,14 @@ footer h6 {
   font-family: 'Righteous', cursive;
   color: white;
   letter-spacing: 0.1em;
+  margin-top: 5px;
 }
 
 footer a {
   float: right;
   padding-right: 10px;
   color: #145dac;
-  margin: 0;
+  margin: 2px;
 } 
 
 /* Footer Ends */
@@ -173,6 +178,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-image: url('../photos/nes-remote-vertical.png');
   background-size: 15px;
+  background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar-button {
@@ -184,16 +190,90 @@ body::-webkit-scrollbar-button {
 /* Scrolbar Style Ends */
 
 /* Media queries begins */
+/* size of screen starting @ 980px */
 @media screen and (max-width: 980px) {
 
   h3 {
   width: 100%;
   padding-bottom: 0;
   text-align: center;
-}};
+  }
+
+  button, .tertiary-color{
+  display: flex;
+  flex-grow: 1;
+  align-content: center;
+  padding: 0;
+  margin: 2em;
+  }
+
+  #background {
+    height: 50vh;
+    background-image: url("../photos/marioBg.jpg");
+    background-size: 980px 500px;
+    /*background-repeat: no-repeat;*/
+    background-attachment: scroll;
+  }
+
+  .g {
+    color: #70bb44;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .b {
+    color: #00bbff;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .y {
+    color: #fbd10b;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .r {
+    color: #fe0000;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .p {
+    color: #ec7aae;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  footer {
+    position: relative;
+    flex-direction: column;
+    min-height: 12vh;
+    width: 100%;
+    margin: auto;
+    background-image: url("../photos/mariobg2.png");
+    background-repeat: no-repeat;
+    background-size: 980px 500px;
+  }
+
+  footer a, .center-align {
+    color: #fe0000;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #fbd10b;
+    padding: 5px;
+    border-radius: 10px;
+  }
+};
 
 
-/* 768px 
+/* size of screen starting @ 768px
 @media screen and (max-width: 768px) {
   .flex-row {
     
@@ -201,7 +281,7 @@ body::-webkit-scrollbar-button {
 } 
 
 
-575px 
+/* size of screen starting @ 575px 
 @media screen and (max-width: 575px) {
 
 }; */
