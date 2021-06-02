@@ -3,7 +3,7 @@ var wikiContainer = $("#wiki");
 var searchButton = $("#search-button");
 var inputEl = $("#input");
 var historyContainer = $("#history-container")
-var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDSLlhNJxicn6aZwfjtRXoKPBvHT599JFc&type=video&part=snippet&maxResults=6&videoEmbeddable=true&q=+super mario`;
+var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDSLlhNJxicn6aZwfjtRXoKPBvHT599JFc&type=video&part=snippet&maxResults=4&videoEmbeddable=true&q=+super mario`;
 var wikiUrl = `https://www.mariowiki.com/api.php?action=query&list=search&format=json&srsearch=`
 
 // function to display youTube videos
@@ -23,8 +23,6 @@ searchButton.on("click", function (event) {
   youTubeContainer.html('')
   var inputValue = inputEl.val()
   queryUrl = youTubeUrl + inputValue;
-
-// fetch data from youtube api
 
 fetch(queryUrl)
   .then(function (response) {
@@ -66,22 +64,10 @@ searchButton.on("click", function (event) {
     .then(function (response) {
       const wikiResults = response.query.search.splice(0, 6)
       wikiResults.forEach(wikiTitle => {
-        displayWiki(wikiTitle)
-       
+        displayWiki(wikiTitle)   
       })
-      
     });
 });
-
-//harcode array
-//loop and console log to make sure loop is working
-//add click event to console log button value
-
-// function generateBtn () {
-//   var createBtn = $('<button>')
-//   createBtn.html = (inputEl)
-//   historyContainer.append(createBtn)
-// }
 
 //this is for the scrolling background
 document.getElementById("body").onscroll = function scrollingBackgound() {
