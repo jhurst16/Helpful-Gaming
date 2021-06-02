@@ -30,6 +30,7 @@
   margin: 0;
   padding: 0;
 }
+
 h3 {
   margin: 0;
 }
@@ -46,6 +47,7 @@ h3 {
   height: 80vh;
   width: 100%;
 }
+
 #place-holder {
   height: 20vh;
 }
@@ -55,6 +57,7 @@ h3 {
 }
 .flex {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -112,6 +115,35 @@ h3 {
 }
 
 footer h6 {
-  text-align: center;
+  text-align: right;
   font-family: 'Righteous', cursive;
 }
+
+/*
+footer a {
+  
+  
+} */
+
+/* Media queries begins */
+@media screen and (max-width: 980px) {
+
+  h3 {
+  width: 100%;
+  padding-bottom: 0;
+  text-align: center;
+}};
+
+
+/* 768px 
+@media screen and (max-width: 768px) {
+  .flex-row {
+    
+  };
+} 
+
+
+575px 
+@media screen and (max-width: 575px) {
+
+}; */
