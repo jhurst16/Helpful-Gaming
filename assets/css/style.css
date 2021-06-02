@@ -273,15 +273,15 @@ body::-webkit-scrollbar-button {
 };
 
 
-/* size of screen starting @ 768px
+/* size of screen starting @ 768px 
 @media screen and (max-width: 768px) {
-  .flex-row {
-    
-  };
-} 
+  
+
+
+}; */
 
 
 /* size of screen starting @ 575px 
 @media screen and (max-width: 575px) {
 
-}; */
+}*/
