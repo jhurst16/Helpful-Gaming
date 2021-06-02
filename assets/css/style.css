@@ -11,15 +11,18 @@
   border: 1px solid black;
 } */
 
-.outline {
+/*.outline {
   font-family: 'Londrina Outline', cursive;
   margin: 0px;
   padding: 0px;
   font-size: 4rem;
-}
+}*/
+
+/* Header Begins */
 
 .header-text {
   font-size: 20px;
+  letter-spacing: 0.1em;
   color: white;
   font-family: 'Righteous', cursive;
   text-align: center;
@@ -39,6 +42,8 @@ h3 {
   background: #145dac;
 }
 
+/* Header Ends*/
+
 #background {
   background-image: url('../photos/mariobg2.png');
   background-position: top center;
@@ -48,12 +53,16 @@ h3 {
   width: 100%;
 }
 
+/* Search Begin */
+
 #place-holder {
   height: 20vh;
 }
 .shadow {
   box-shadow: 2px 2px 1px black;
   border-radius: 10px;
+
+  /* Search End */
 }
 .flex {
   display: flex;
@@ -74,6 +83,8 @@ h3 {
   background-color: #145dac;
 }
 
+/* Offical and Lego Button Begin */
+
 .secondary-color {
   background: #145dac;
   color: rgb(255, 255, 255);
@@ -86,6 +97,10 @@ h3 {
 .text-size {
   font-size: 25px;
 }
+
+/* Offical and Lego Button End */
+
+/* Super Mario letters Begin */
 
 .mario-color1 {
   color: #00bbff;
@@ -111,7 +126,10 @@ h3 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.menu-text {
+
+/* Super Mario letters End */
+
+/*.menu-text {
   font-family: 'Righteous', cursive;
 }
 
@@ -126,6 +144,7 @@ footer h6 {
   text-align: right;
   font-family: 'Righteous', cursive;
   color: white;
+  letter-spacing: 0.1em;
 }
 
 footer a {
@@ -149,14 +168,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   background: rgb(251,209,11);
   background: linear-gradient(180deg, rgba(251,209,11,1) 0%, rgba(9,9,121,1) 72%, rgba(20,93,172,1) 100%);
-  /*border-radius: 5em;*/
 }
 
 body::-webkit-scrollbar-thumb {
   background-image: url('../photos/nes-remote-vertical.png');
   background-size: 15px;
-  /*border-radius: 5em;
-  outline: 5px solid #fbd10b;*/
 }
 
 body::-webkit-scrollbar-button {
