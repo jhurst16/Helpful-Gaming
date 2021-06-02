@@ -49,14 +49,14 @@
   background-position: top center;
   background-attachment: scroll;
   background-size: cover;
-  height: 47vh;
+  height: 75vh;
   width: 100%;
 }
 
 /* Search Begin, border-radius for search and input box had to be overritten within html, button shadow works in css*/
 
 #place-holder {
-  height: 20vh;
+  height: 50vh;
 }
 .shadow {
   box-shadow: 2px 2px 1px black;
