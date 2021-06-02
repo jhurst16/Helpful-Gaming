@@ -1,40 +1,72 @@
-.outline {
+/* body {
+  margin: 0;
+  height: 100vh;
+  cursor: url("../images/nes-remote"), auto;
+  background-color: #fbd10b;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+} */
+
+/*.outline {
   font-family: 'Londrina Outline', cursive;
   margin: 0px;
   padding: 0px;
   font-size: 4rem;
-}
+}*/
+
+/* Header Begins */
 
 .header-text {
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  color: white;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  background-color: #145dac;
+  border-bottom: #fbd10b solid 5px;
+  width: 100%; 
+  height: 2em;
+  margin: 0;
+  padding: 0; 
 }
+
+/*h3 {
+  margin: 0;
+} */
 
 .header-color {
   background: #145dac;
 }
 
-.header-text {
-  color: white;
-}
+/* Header Ends */
 
 #background {
   background-image: url('../photos/mariobg2.png');
   background-position: top center;
   background-attachment: scroll;
   background-size: cover;
-  height: 80vh;
+  height: 47vh;
   width: 100%;
 }
+
+/* Search Begin, border-radius for search and input box had to be overritten within html, button shadow works in css*/
+
 #place-holder {
   height: 20vh;
 }
 .shadow {
   box-shadow: 2px 2px 1px black;
   border-radius: 10px;
+
+/* Search End, button shadow  */
 }
 .flex {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -48,20 +80,31 @@
 .flex-row {
   display: flex;
   justify-content: center;
+  background-color: #145dac;
 }
+
+/* Offical and Lego Button Begin */
+
+.tertiary-color {
+  background-color: #fbd10b;
+}
+
+/* Offical and Lego Button End */
+
+/* Grid Section Begins */
 
 .secondary-color {
   background: #145dac;
   color: rgb(255, 255, 255);
 }
 
-.tertiary-color {
-  background-color: #fbd10b;
-}
-
 .text-size {
   font-size: 25px;
 }
+
+/* Grid Section Ends */
+
+/* Super Mario letters Begin */
 
 .mario-color1 {
   color: #00bbff;
@@ -87,11 +130,158 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.menu-text {
+
+/* Super Mario letters End */
+
+/*.menu-text {
   font-family: 'Righteous', cursive;
 }
 
-footer h6 {
-  text-align: center;
-  font-family: 'Righteous', cursive;
+/* Footer Begins */
+
+footer {
+  background-color: #145dac;
+  border-top: #fbd10b solid 5px;
 }
+
+footer h6 {
+  text-align: right;
+  font-family: 'Righteous', cursive;
+  color: white;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+}
+
+footer a {
+  float: right;
+  padding-right: 10px;
+  color: #145dac;
+  margin: 2px;
+} 
+
+/* Footer Ends */
+
+/* Scrolbar Style Begins */
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(251,209,11);
+  background: linear-gradient(180deg, rgba(251,209,11,1) 0%, rgba(9,9,121,1) 72%, rgba(20,93,172,1) 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: url('../photos/nes-remote-vertical.png');
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar-button {
+  background-image: url('../photos/question.png');
+  min-height: 16px;
+  background-size: 1em;
+}
+
+/* Scrolbar Style Ends */
+
+/* Media queries begins */
+/* size of screen starting @ 980px */
+@media screen and (max-width: 980px) {
+
+  h3 {
+  width: 100%;
+  padding-bottom: 0;
+  text-align: center;
+  }
+
+  button, .tertiary-color{
+  display: flex;
+  flex-grow: 1;
+  align-content: center;
+  padding: 0;
+  margin: 2em;
+  }
+
+  #background {
+    height: 50vh;
+    background-image: url("../photos/marioBg.jpg");
+    background-size: 980px 500px;
+    /*background-repeat: no-repeat;*/
+    background-attachment: scroll;
+  }
+
+  .g {
+    color: #70bb44;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .b {
+    color: #00bbff;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .y {
+    color: #fbd10b;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .r {
+    color: #fe0000;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .p {
+    color: #ec7aae;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  footer {
+    position: relative;
+    flex-direction: column;
+    min-height: 12vh;
+    width: 100%;
+    margin: auto;
+    background-image: url("../photos/mariobg2.png");
+    background-repeat: no-repeat;
+    background-size: 980px 500px;
+  }
+
+  footer a, .center-align {
+    color: #fe0000;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #fbd10b;
+    padding: 5px;
+    border-radius: 10px;
+  }
+};
+
+
+/* size of screen starting @ 768px
+@media screen and (max-width: 768px) {
+  .flex-row {
+    
+  };
+} 
+
+
+/* size of screen starting @ 575px 
+@media screen and (max-width: 575px) {
+
+}; */
