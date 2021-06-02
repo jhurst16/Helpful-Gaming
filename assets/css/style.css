@@ -44,11 +44,9 @@ h3 {
   background-position: top center;
   background-attachment: scroll;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   width: 100%;
 }
-
-
 
 #place-holder {
   height: 20vh;
@@ -138,6 +136,36 @@ footer a {
 } 
 
 /* Footer Ends */
+
+/* Scrolbar Style Begins */
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(251,209,11);
+  background: linear-gradient(180deg, rgba(251,209,11,1) 0%, rgba(9,9,121,1) 72%, rgba(20,93,172,1) 100%);
+  /*border-radius: 5em;*/
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: url('../photos/nes-remote-vertical.png');
+  background-size: 15px;
+  /*border-radius: 5em;
+  outline: 5px solid #fbd10b;*/
+}
+
+body::-webkit-scrollbar-button {
+  background-image: url('../photos/question.png');
+  min-height: 16px;
+  background-size: 1em;
+}
+
+/* Scrolbar Style Ends */
 
 /* Media queries begins */
 @media screen and (max-width: 980px) {
