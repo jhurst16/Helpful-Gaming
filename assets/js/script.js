@@ -33,7 +33,6 @@ fetch(queryUrl)
   .then(function (response) {
     $.each(response.items, function (index, item) {
       displayVideo(item)
-      generateBtn()
     })
   });
 });
