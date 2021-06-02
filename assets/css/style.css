@@ -1,28 +1,97 @@
 .outline {
   font-family: 'Londrina Outline', cursive;
-  margin:0px;
-  padding:0px;
-  font-size: 4.0rem;
+  margin: 0px;
+  padding: 0px;
+  font-size: 4rem;
+}
+
+.header-text {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.header-color {
+  background: #145dac;
+}
+
+.header-text {
+  color: white;
 }
 
 #background {
-    background-image: url("../photos/mariobg2.png");
-    background-position: top center;
-    background-attachment:scroll;
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
+  background-image: url('../photos/mariobg2.png');
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
 }
-#place-holder{
-    height:20vh
+#place-holder {
+  height: 20vh;
 }
 .shadow {
-  box-shadow: 2px 2px 1px grey;
+  box-shadow: 2px 2px 1px black;
   border-radius: 10px;
 }
 .flex {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-color {
+  background: #145dac;
+  color: rgb(255, 255, 255);
+}
+
+.tertiary-color {
+  background-color: #fbd10b;
+}
+
+.text-size {
+  font-size: 25px;
+}
+
+.mario-color1 {
+  color: #00bbff;
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mario-color2 {
+  color: #fc0;
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mario-color3 {
+  color: #fe0000;
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mario-color4 {
+  color: #34b900;
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu-text {
+  font-family: 'Righteous', cursive;
+}
+
+footer h6 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
 }
