@@ -56,7 +56,7 @@
 /* Search Begin, border-radius for search and input box had to be overritten within html, button shadow works in css*/
 
 #place-holder {
-  height: 50vh;
+  height: 25vh;
 }
 .shadow {
   box-shadow: 2px 2px 1px black;
