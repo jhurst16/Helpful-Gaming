@@ -191,7 +191,7 @@ body::-webkit-scrollbar-button {
 
 /* Video and random facts section Begins */
 
-.wiki-flex {
+.background-flex {
   background: rgb(251,209,11);
   background: radial-gradient(circle, rgba(251,209,11,1) 0%, rgba(20,93,172,1) 100%);
 }
@@ -207,6 +207,13 @@ footer {
 
 footer a {
   color: white;
+}
+
+footer a:hover {
+  background-color: #fbd10b;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 /* Video and random facts section Ends */
