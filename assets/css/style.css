@@ -189,6 +189,30 @@ body::-webkit-scrollbar-button {
 
 /* Scrolbar Style Ends */
 
+/* Video and random facts section Begins */
+
+.wiki-flex {
+  background: rgb(251,209,11);
+  background: radial-gradient(circle, rgba(251,209,11,1) 0%, rgba(20,93,172,1) 100%);
+}
+
+footer {
+  background: rgb(20,93,172);
+  position: relative;
+  flex-direction: column;
+  min-height: 12vh;
+  width: 100%;
+  margin: auto;
+}
+
+footer a {
+  color: white;
+}
+
+/* Video and random facts section Ends */
+
+
+
 /* Media queries begins */
 /* size of screen starting @ 980px */
 @media screen and (max-width: 980px) {

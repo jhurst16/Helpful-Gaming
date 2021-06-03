@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Helpful Gaming!</title>
-    <link rel="shortcut icon" type="image/png" href="./assets/photos/mario2.png">
+    <link rel="shortcut icon" type="image/png" href="./assets/photos/mario.png">
     <meta name="description" content="A helpful place for gamers!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,8 +23,10 @@
     <h3 id="top" class="header-text">Helpful Gamers!</h3>
     <div class="flex header-color ">
         <ul class="dropdown menu" data-dropdown-menu>
-            <li class="shadow tertiary-color"><a href="https://mario.nintendo.com/">Official Mario!</a></li>
-            <li class="shadow tertiary-color"><a href="https://www.lego.com/en-us/themes/super-mario/about">LEGO Mario!</a></li>
+            <li class="shadow tertiary-color"><a href="https://mario.nintendo.com/" style="color:#145dac;">Official
+                    Mario!</a></li>
+            <li class="shadow tertiary-color"><a href="https://www.lego.com/en-us/themes/super-mario/about"
+                    style="color:#145dac;">LEGO Mario!</a></li>
         </ul>
         <div class="flex-row">
             <h1 class="mario-color1 r">S</h1>
@@ -50,19 +52,22 @@
         <div id="background">
         </div>
     </main>
-    <div class="flex-row secondary-color">
-        <p class="text-size"> Below is a grid of videos and tips/videos to choose from!</p>
+    <div class="flex-column secondary-color wiki-flex">
+        <p class="text-size"> Below will be the search history!</p>
+        <div id="history-container">
+            
+        </div>
         <div id="place-holder">
         </div>
     </div>
 
     <!-- background end -->
     <!-- container for one api -->
-    <div class="flex-row">
-        <div>
-            <div class="flex-column" id="wiki">
+        <div class="flex-column">
+            <div id="videos" class="flex wiki-flex">
             </div>
-            <div class="flex-column" id="videos">
+            
+            <div" id="wiki" class="flex">
             </div>
         </div>
     </div>
@@ -72,7 +77,7 @@
         <h6 class="center-align">&copy; 2021 Helpful Gamers!</h6>
         </div>
         
-        <a href="#top">Back to Top</a>
+        <a href="#top" class="back">Back to Top</a>
         
     </footer>
 
