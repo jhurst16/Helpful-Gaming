@@ -20,8 +20,6 @@
 
 /* Header Begins */
 
-
-
 .header-text {
   font-size: 30px;
   letter-spacing: 0.1em;
@@ -59,9 +57,10 @@
 .shadow {
   box-shadow: 2px 2px 1px black;
   border-radius: 10px;
+}
 
 /* Search End, button shadow  */
-}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -156,6 +155,7 @@ footer a {
 /* Footer Ends */
 
 /* Scrolbar Style Begins */
+
 html {
   scroll-behavior: smooth;
 }
@@ -193,7 +193,6 @@ body::-webkit-scrollbar-button {
   margin: 5em 15em 5em 15em;
 }
 
-
 /* Video and random facts section Ends */
 
 /* Footer Begins */
@@ -204,7 +203,6 @@ body::-webkit-scrollbar-button {
   background-size:cover;
   background-attachment: fixed;
   border: none;
-  
 }
 
 footer {
@@ -229,18 +227,17 @@ footer a:hover {
 
 /* Footer Ends */
 
+/* Media Queries begins */
+/* Size of Screen Starting @ 575px */
 
-
-/* Media queries begins */
-
-/* size of screen starting @ 575px */
 @media screen and (max-width: 575px) {
   .r {
     color: black;
   }
 }
 
-/* size of screen starting @ 768px */
+/* Size of Screen Starting @ 768px */
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
   
   .y {
@@ -266,7 +263,8 @@ footer a:hover {
 
 };
 
-/* size of screen starting @ 980px */
+/* Size of Screen Starting @ 980px */
+
 @media screen and (min-width: 769px) and (max-width: 980px) {
 
   h3 {
@@ -347,3 +345,5 @@ footer a:hover {
     border-radius: 10px;
   }
 };
+
+/* Media Queries Ends */
