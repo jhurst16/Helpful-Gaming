@@ -20,6 +20,8 @@
 
 /* Header Begins */
 
+
+
 .header-text {
   font-size: 30px;
   letter-spacing: 0.1em;
@@ -186,8 +188,11 @@ body::-webkit-scrollbar-button {
 .wiki-flex {
   background: inherit;
   color: white;
+  font-weight: bold;
   line-height: 150%;
+  margin: 5em 15em 5em 15em;
 }
+
 
 /* Video and random facts section Ends */
 
@@ -227,6 +232,40 @@ footer a:hover {
 
 
 /* Media queries begins */
+
+/* size of screen starting @ 575px */
+@media screen and (max-width: 575px) {
+  .r {
+    color: black;
+  }
+}
+
+/* size of screen starting @ 768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  
+  .y {
+    color: #00bbff;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .r, .b {
+    color: #70bb44;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .g, .p {
+    color: #ec7aae;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+};
+
 /* size of screen starting @ 980px */
 @media screen and (min-width: 769px) and (max-width: 980px) {
 
@@ -308,18 +347,3 @@ footer a:hover {
     border-radius: 10px;
   }
 };
-
-
-
-/* size of screen starting @ 768px 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  
-
-
-}; */
-
-
-/* size of screen starting @ 575px 
-@media screen and (max-width: 575px) {
-
-}*/

@@ -43,6 +43,9 @@ var displaySnippet = function (object) {
   wikiSnippet.html(object.snippet);
   wikiContainer.append(wikiSnippet);
 }
+
+
+
 // function to display wiki websites
 var displayWiki = function (wiki) {
   //represents one node
