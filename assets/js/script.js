@@ -79,8 +79,3 @@ document.getElementById("body").onscroll = function scrollingBackgound() {
   target.style.backgroundPosition = xvalue + " " + yvalue + "px";
 }
 //scrolling background end
-
-
-
-
-
