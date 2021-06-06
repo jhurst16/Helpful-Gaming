@@ -46,7 +46,6 @@
   letter-spacing: 0.1em;
 }
 
-
 #background {
   background-image: url('../photos/mariobg2.png');
   background-position: top center;
@@ -137,30 +136,6 @@
 
 /* Super Mario letters End */
 
-/* Footer Begins */
-
-footer {
-  background-color: #145dac;
-  border-top: #fbd10b solid 5px;
-}
-
-footer h6 {
-  text-align: right;
-  font-family: 'Righteous', cursive;
-  color: white;
-  letter-spacing: 0.1em;
-  margin-top: 5px;
-}
-
-footer a {
-  float: right;
-  padding-right: 10px;
-  color: #145dac;
-  margin: 2px;
-} 
-
-/* Footer Ends */
-
 /* Scrolbar Style Begins */
 
 html {
@@ -215,6 +190,7 @@ body::-webkit-scrollbar-button {
 
 footer {
   background: rgb(20,93,172);
+  border-top: #fbd10b solid 5px;
   position: relative;
   flex-direction: column;
   min-height: 12vh;
@@ -223,9 +199,12 @@ footer {
 }
 
 footer a {
+  float: right;
+  padding-right: 10px;
   color: white;
+  margin: 2px;
   letter-spacing: 0.1em;
-}
+} 
 
 footer a:hover {
   background-color: #fbd10b;
@@ -234,7 +213,16 @@ footer a:hover {
   margin: 5px;
 }
 
+footer h6 {
+  text-align: right;
+  font-family: 'Righteous', cursive;
+  color: white;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+}
+
 /* Footer Ends */
+
 
 /* Media Queries begins */
 /* Size of Screen Starting @ 575px */
@@ -272,27 +260,6 @@ footer a:hover {
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   
-  .y {
-    color: #00bbff;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  .r, .b {
-    color: #70bb44;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  .g, .p {
-    color: #ec7aae;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
   .menu {
     top: 1em;
     margin-left: 10em;
@@ -304,6 +271,10 @@ footer a:hover {
     flex-direction: row;
     margin: 2em 5em 0em 5em;
     padding: 0;
+  }
+
+  .background-flex {
+    line-height: 3em;
   }
 
   .wiki-flex {
@@ -338,41 +309,6 @@ footer a:hover {
     background-image: url("../photos/marioBg.jpg");
     background-size: 980px 500px;
     background-attachment: scroll;
-  }
-
-  .g {
-    color: #70bb44;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  .b {
-    color: #00bbff;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  .y {
-    color: #fbd10b;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  .r {
-    color: #fe0000;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  .p {
-    color: #ec7aae;
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   footer {
