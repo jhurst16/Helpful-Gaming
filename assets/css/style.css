@@ -18,6 +18,8 @@
   font-size: 4rem;
 }*/
 
+
+
 /* Header Begins */
 
 .header-text {
@@ -203,6 +205,7 @@ body::-webkit-scrollbar-button {
   background-size:cover;
   background-attachment: fixed;
   border: none;
+  letter-spacing: 0.1em;
 }
 
 footer {
@@ -216,6 +219,7 @@ footer {
 
 footer a {
   color: white;
+  letter-spacing: 0.1em;
 }
 
 footer a:hover {
@@ -231,8 +235,36 @@ footer a:hover {
 /* Size of Screen Starting @ 575px */
 
 @media screen and (max-width: 575px) {
-  .r {
-    color: black;
+
+  .menu {
+    letter-spacing: 0.1em;
+    top: 1em;
+    margin-left: 10em;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .flex-row {
+    flex-direction: row;
+    margin: 2em 5em 0em 5em;
+    padding: 0;
+  }
+  
+  .background-flex {
+    line-height: 3em;
+  }
+
+  .button {
+    letter-spacing: 0.1em;
+  }
+
+  /* Snippet section */
+  .wiki-flex {
+    background: inherit;
+    color: white;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 5em 5em;
   }
 }
 
