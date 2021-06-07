@@ -2,7 +2,7 @@
 
 ## Description
 
-Helpful Gamers! is an application that allows users to search for any Mario game or term. In return, they are given a selection of YouTube videos and random snippets of Mariowiki information.
+Helpful Gamers! is an application that allows users to search for any Mario game or term. In return, they are given a selection of YouTube videos and random snippets of MarioWiki information.
 
 
 ## Contributors
