@@ -27,7 +27,7 @@ searchButton.on("click", function (event) {
   makeButton.attr("class", "button");
   makeButton.attr(
     "style",
-    "margin: 2px; border-radius: 10px; color: #145dac; background: #fbd10b");
+    "margin: 4px; border-radius: 10px; color: #145dac; background: #fbd10b");
   makeButton.text(inputValue);
   historyContainer.append(makeButton);
 
