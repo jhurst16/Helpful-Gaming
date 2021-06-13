@@ -3,8 +3,10 @@ var wikiContainer = $("#wiki");
 var searchButton = $("#search-button");
 var inputEl = $("#input");
 var historyContainer = $("#history-container")
-var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyBaHR_vdcyTqtzFyLY6v-Gj9QeThGAmExA&type=video&part=snippet&maxResults=4&videoEmbeddable=true&q=+super mario`;
+var youTubeUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyBZgbmlJUaRhWn71SGI_EyrsJKuI_A-72Y&type=video&part=snippet&maxResults=4&videoEmbeddable=true&q=+super mario`;
 var wikiUrl = `https://www.mariowiki.com/api.php?action=query&list=search&format=json&srsearch=`
+var searchArray = JSON.parse(localStorage.getItem('userInput')) || [];
+
 // function to display youTube videos
 
 var displayVideo = function (object) {
@@ -19,11 +21,16 @@ var displayVideo = function (object) {
 searchButton.on("click", function (event) {
   event.preventDefault();
   youTubeContainer.html('')
-  var inputValue = inputEl.val()
-  localStorage.setItem("userInput", JSON.stringify(inputValue))
-  var makeButton = $("button")
-  makeButton.html(inputValue)
-  historyContainer.append(makeButton)
+  var inputValue = inputEl.val();
+  localStorage.setItem("userInput", JSON.stringify(searchArray));
+  var makeButton = $("<button>");
+  makeButton.attr("class", "button");
+  makeButton.attr(
+    "style",
+    "margin: 4px; border-radius: 10px; color: #145dac; background: #fbd10b");
+  makeButton.text(inputValue);
+  historyContainer.append(makeButton);
+
   queryUrl = youTubeUrl + inputValue;
 
   fetch(queryUrl)
@@ -79,3 +86,6 @@ document.getElementById("body").onscroll = function scrollingBackgound() {
   target.style.backgroundPosition = xvalue + " " + yvalue + "px";
 }
 //scrolling background end
+
+
+
